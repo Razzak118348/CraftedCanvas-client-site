@@ -31,31 +31,46 @@ const Banner = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          <img  src="https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/LandscapePainting1.jpg" />
+          <h2 className='text-lg font-bold text-center'>Majestic mountains capturing nature's grandeur.</h2>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <img src="https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/PortraitDrawing1.jpg" />
+          <h2 className='text-lg font-bold text-center text-white -mt-32'>Tranquil forests evoking peaceful serenity.</h2>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          <img src="https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/horse.png
+" />
+  <h2 className='text-lg font-bold text-center '>Detailed structures showcasing architectural beauty.</h2>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          <img src="https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/OilPainting1.jpg
+" />
+ <h2 className='text-lg font-bold text-center'> Expressive art focusing on color and emotion.</h2>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          <img src="https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/CharcoalSketching1.jpg
+" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+          <img src="https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/CartoonDrawing1.jpg
+" />
+<h2
+className='text-lg font-bold text-center'>Vibrant colors and playful characters.</h2>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+          <img src="https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/OilPainting3.png
+" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+          <img src="https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/woodcolor2.jpg
+" />
+<h2  className='text-lg font-bold text-center'>"Mountains inspire strength; the moon illuminates dreams."</h2>
+
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+          <img src="https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/LandscapePainting3.jpg
+" />
         </SwiperSlide>
       </Swiper>
         </div>

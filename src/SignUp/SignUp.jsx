@@ -176,7 +176,7 @@ if(!PasswordValidation(password)){
           </div>
         </div>
 <div className="sm:hidden md:flex">
-    <img src="/images/register.png" alt="" />
+    <img src="https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/register.png" alt="" />
 </div>
       </div>
 

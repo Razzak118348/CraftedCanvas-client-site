@@ -1,0 +1,35 @@
+
+form :
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/register.png
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/form.png
+
+a.Landscape Painting:
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/LandscapePainting1.jpg
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/LandscapePainting2.jpg
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/LandscapePainting3.jpg
+
+b. Portrait Drawing:
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/PortraitDrawing1.jpg
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/PortraitDrawing2.jpg
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/PortraitDrawing3.jpg
+
+c. Watercolour Painting:
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/horse.png
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/woodcolor2.jpg
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/sea-7331682_1280.jpg
+
+d. Oil Painting:
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/OilPainting1.jpg
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/OilPainting2.jpg
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/OilPainting3.png
+
+e. Charcoal Sketching:
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/CharcoalSketching1.jpg
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/CharcoalSketching2.jpg
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/CharcoalSketching3.png
+
+
+f. Cartoon Drawing:
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/CartoonDrawing1.jpg
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/CartoonDrawing2.png
+https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/CartoonDrawing3.jpg

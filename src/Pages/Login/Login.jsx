@@ -124,7 +124,7 @@ toast.error("Password or Email Invalid",{position:'top-right'})
         </div>
 
         <div className="sm:hidden md:flex">
-<img src="/images/form.png" alt="" />
+<img src="https://github.com/Razzak118348/CraftedCanvas_Image/raw/main/images/form.png" alt="" />
         </div>
       </div>
 

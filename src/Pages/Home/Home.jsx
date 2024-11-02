@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import Banner from "../../Components/Banner/Banner";
 
 
 const Home = () => {
@@ -7,7 +8,8 @@ const Home = () => {
 <Helmet>
     <title>CraftedCanvas | Home</title>
 </Helmet>
-<div>
+<Banner></Banner>
+<div className="mt-10 lg:mt-16">
     hi this is crafted canvas
 </div>
         </div>

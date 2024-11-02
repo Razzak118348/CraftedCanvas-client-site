@@ -5,17 +5,14 @@ import NavTypewriter from "../NavTypewriter/NavTypewriter";
 
 const Navbar = () => {
   const { LogOut, user} = useAuth()
-
-
-
   const Navlink = <>
     <li><NavLink className=" mr-1   md:mr-4  my-0 md:my-0 F font-bold text-base  text-black " to='/'>Home</NavLink> </li>
     <li><NavLink className=" mr-1 text-black  md:mr-4  my-0 md:my-0  font-bold text-base " to='/allArtCraft'>Art & Craft</NavLink></li>
+    <li><NavLink className=" mr-1   md:mr-4  my-0 md:my-0 font-bold text-base " to='/addCraft'>Add Craft</NavLink></li>
 
 
 {user && (
   <>
- <li><NavLink className=" mr-1   md:mr-4  my-0 md:my-0 font-bold text-base " to='/addCraft'>Add Craft</NavLink></li>
  <li> <NavLink className="mr-1   md:mr-4  my-0 md:my-0 font-bold text-base " to='/myArtCraft'>My Art & Craft</NavLink></li>
 
   </>

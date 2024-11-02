@@ -6,6 +6,9 @@ import Home from "../Pages/Home/Home";
 import AddArtAndCraft from "../Pages/AddArtAndCraft/AddArtAndCraft";
 import Login from "../Pages/Login/Login";
 import Signup from "../SignUp/SignUp";
+import AllArtandCraft from "../Pages/AllArtandCraft/AllArtandCraft";
+import PrivetRout from "./PrivateRout";
+import MyArtAndCraft from "../Pages/MyArtAndCraft/MyArtAndCraft";
 
 const Routes = createBrowserRouter([
     {
@@ -19,7 +22,7 @@ const Routes = createBrowserRouter([
             },
             {
                 path:'/allArtCraft',
-                element:<AddArtAndCraft></AddArtAndCraft>
+                element:<AllArtandCraft></AllArtandCraft>
             },
             {
 path:'/login',
@@ -28,6 +31,14 @@ element:<Login></Login>
             {
                 path:'/signup',
                 element:<Signup></Signup>
+            },
+            {
+                path:'/addCraft',
+                element:<PrivetRout children={<AddArtAndCraft></AddArtAndCraft>}></PrivetRout>
+            },
+            {
+                path:'/myArtCraft',
+                element:<MyArtAndCraft></MyArtAndCraft>
             }
         ]
     }

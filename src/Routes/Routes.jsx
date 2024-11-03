@@ -9,39 +9,47 @@ import Signup from "../SignUp/SignUp";
 import AllArtandCraft from "../Pages/AllArtandCraft/AllArtandCraft";
 import PrivetRout from "./PrivateRout";
 import MyArtAndCraft from "../Pages/MyArtAndCraft/MyArtAndCraft";
+import CraftDetails from "../Pages/CraftDetails/CraftDetails";
 
 const Routes = createBrowserRouter([
     {
-        path:'/',
-        element:<Root></Root>,
-        errorElement:<Error></Error>,
+        path: '/',
+        element: <Root></Root>,
+        errorElement: <Error></Error>,
         children: [
             {
-                path:'/',
-                element:<Home></Home>
+                path: '/',
+                element: <Home></Home>,
+                loader: () => fetch('http://localhost:5000/allcraft')
             },
             {
-                path:'/allArtCraft',
-                element:<AllArtandCraft></AllArtandCraft>
+                path: '/allArtCraft',
+                element: <AllArtandCraft></AllArtandCraft>
             },
             {
-path:'/login',
-element:<Login></Login>
+                path: '/login',
+                element: <Login></Login>
             },
             {
-                path:'/signup',
-                element:<Signup></Signup>
+                path: '/signup',
+                element: <Signup></Signup>
             },
             {
-                path:'/addCraft',
-                element:<PrivetRout children={<AddArtAndCraft></AddArtAndCraft>}></PrivetRout>
+                path: '/addCraft',
+                element: <PrivetRout children={<AddArtAndCraft></AddArtAndCraft>}></PrivetRout>
             },
             {
-                path:'/myArtCraft',
-                element:<MyArtAndCraft></MyArtAndCraft>
+                path: '/myArtCraft',
+                element: <MyArtAndCraft></MyArtAndCraft>
+            },
+            {
+                path:'/craftDetails/:id',
+                element:<PrivetRout> <CraftDetails></CraftDetails> </PrivetRout>,
+                loader: ({params}) => fetch(`http://localhost:5000/allCraft/${params.id}`)
+
             }
         ]
     }
-    ])
+])
 
 export default Routes;

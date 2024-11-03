@@ -1,7 +1,7 @@
 import Swal from 'sweetalert2'
-
+import useAuth from "../../hooks/useAuth"
 const AddArtAndCraft = () => {
-
+const {user} = useAuth()
     const handleForm = (e)=>{
         e.preventDefault()
         const form = e.target;
@@ -130,6 +130,7 @@ fetch('http://localhost:5000/allcraft',{
                         </label>
                         <input type="email" placeholder="email"
                             name="email"
+                            defaultValue={user.email}
                             className="input input-bordered w-full md:w-auto" required />
                     </div>
                     <div>
@@ -138,6 +139,8 @@ fetch('http://localhost:5000/allcraft',{
                         </label>
                         <input type="text" placeholder="User name"
                             name="name"
+                            defaultValue={user.
+                                displayName}
                             className="input input-bordered w-full md:w-auto" required />
                     </div>
 

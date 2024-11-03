@@ -3,11 +3,11 @@ import useAuth from "../hooks/useAuth";
 
 
 const PrivetRout = ({children}) => {
-    console.log(children)
+    // console.log(children)
     const {user,loading} = useAuth();
     const location = useLocation();
-    console.log(location.pathname)
-console.log(loading)
+    // console.log(location.pathname)
+// console.log(loading)
     if(loading){
         return <div className="flex w-52 flex-col gap-4">
         <div className="skeleton h-32 w-full"></div>

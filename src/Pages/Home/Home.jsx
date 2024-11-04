@@ -8,7 +8,7 @@ import Subcategory from "../../Components/Subcategory/Subcategory";
 import { Tooltip } from "react-tooltip";
 import ClientReview from "../../Components/ClientReview/ClientReview";
 import Artist from "../../Components/Artist/Artist";
-
+import 'animate.css';
 
 
 const Home = () => {
@@ -87,7 +87,7 @@ const Home = () => {
               <div
                 id="my-anchor-element-id"
                 key={craft._id}
-                className="card bg-base-100 w-auto shadow-xl shadow-sky-100 hover:scale-105"
+                className="card bg-base-100 w-auto shadow-xl shadow-sky-100 hover:scale-105 animate__animated animate__slideInUp"
               >
                 <figure>
                   <img

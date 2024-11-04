@@ -19,7 +19,7 @@ const ClientReview = () => {
     return (
         <div className='mt-28'>
             <h2 className='text-lg md:text-3xl '><Typewriter
-                      words={["All REVIE IS HERE ..."]}
+                      words={["Customer Reviews and Testimonials ..."]}
                       loop={3}
                       typeSpeed={70}
                       deleteSpeed={50}

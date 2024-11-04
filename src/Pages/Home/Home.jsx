@@ -7,6 +7,9 @@ import { useState } from "react";
 import Subcategory from "../../Components/Subcategory/Subcategory";
 import { Tooltip } from "react-tooltip";
 import ClientReview from "../../Components/ClientReview/ClientReview";
+import Artist from "../../Components/Artist/Artist";
+
+
 
 const Home = () => {
   const allCraft = useLoaderData();
@@ -140,6 +143,10 @@ const Home = () => {
 
 {/* client review  */}
 <ClientReview></ClientReview>
+
+{/* artist  */}
+<Artist></Artist>
+
     </div>
   );
 };

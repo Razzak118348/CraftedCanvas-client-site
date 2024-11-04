@@ -1,0 +1,16 @@
+[
+    {
+      "id": "1",
+      "name": "Jane Doe",
+      "image":"https://raw.githubusercontent.com/Razzak118348/CraftedCanvas_Image/main/images/artist.jpg",
+      "bio":"Jane specializes in handcrafted pottery and has over 10 years of experience in ceramic art.",
+      "story": "Jane finds inspiration in nature and often incorporates natural textures and colors into her pottery."
+    },
+    {
+      "id": "2",
+      "name": "John Smith",
+      "image":"https://raw.githubusercontent.com/Razzak118348/CraftedCanvas_Image/main/images/artist2.jpg",
+      "bio": "John is a woodworker known for his attention to detail and love of sustainable materials.",
+      "story": "John’s work reflects his philosophy of “reuse and repurpose” with a focus on sustainability."
+    }
+]

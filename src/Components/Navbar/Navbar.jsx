@@ -67,7 +67,7 @@ const Navbar = () => {
           </label>
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1000] p-2 shadow bg-base-100 rounded-box w-52">
               <li>
- <button className="btn btn-sm  btn-ghost">{user?.displayName||'user name not found'}</button>
+ <p className="btn btn-sm  btn-ghost">{user?.displayName||'user name not found'}</p>
 
               </li>
               <li>

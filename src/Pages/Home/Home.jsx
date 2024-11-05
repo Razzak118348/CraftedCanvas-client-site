@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet";
 import Banner from "../../Components/Banner/Banner";
 import { Link, useLoaderData } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaStar } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
 import { useState } from "react";
 import Subcategory from "../../Components/Subcategory/Subcategory";
@@ -108,12 +108,10 @@ const Home = () => {
                   <p>{craft.shortDescription}</p>
                   <div className="flex my-2 space-x-1">
                     <p className="font-semibold "> price : ${craft.price}</p>
-                    <p className="font-semibold">Rating : {craft.rating}</p>
+                    <p className="font-semibold flex space-x-1">Rating : {craft.rating}<FaStar className="text-yellow-400 mt-1 ml-1"></FaStar></p>
                   </div>
                   <div className="card-actions justify-end">
-                    <p className="font-semibold mt-2">
-                      Status : {craft.stockstatus}
-                    </p>
+
                     <Link to={`/craftDetails/${craft._id}`}>
                       <button className="btn bg-sky-300 font-black">
                         View Details <FaArrowRight></FaArrowRight>
@@ -124,6 +122,9 @@ const Home = () => {
 
                 <Tooltip anchorSelect="#my-anchor-element-id">
                   <p>Processing time need {craft.processingtime}</p>
+                  <p className="font-semibold mt-2">
+                      Status : {craft.stockstatus}
+                    </p>
                 </Tooltip>
               </div>
             ))}

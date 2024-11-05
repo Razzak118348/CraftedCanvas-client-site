@@ -10,6 +10,7 @@ import AllArtandCraft from "../Pages/AllArtandCraft/AllArtandCraft";
 import PrivetRout from "./PrivateRout";
 import MyArtAndCraft from "../Pages/MyArtAndCraft/MyArtAndCraft";
 import CraftDetails from "../Pages/CraftDetails/CraftDetails";
+import Update from "../Pages/Update/Update";
 
 const Routes = createBrowserRouter([
     {
@@ -47,6 +48,11 @@ const Routes = createBrowserRouter([
                 element:<PrivetRout> <CraftDetails></CraftDetails> </PrivetRout>,
                 loader: ({params}) => fetch(`http://localhost:5000/allCraft/${params.id}`)
 
+            },
+            {
+                path:'/update/:id',
+                element:<Update></Update>,
+                loader:({params}) => fetch(`http://localhost:5000/allCraft/${params.id}`)
             }
         ]
     }

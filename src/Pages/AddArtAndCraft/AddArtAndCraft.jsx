@@ -21,7 +21,7 @@ const stockstatus = form.stockstatus.value;
 const addCraft ={username, email,price,shortDescription,image,item_name,subcategory_name,rating,customization,processingtime,stockstatus}
 console.log(addCraft);
 
-fetch('https://crafted-canvas-server-fg3y9spc1-abdur-razzaks-projects.vercel.app/allcraft',{
+fetch('https://crafted-canvas-server-beta.vercel.app/allCraft',{
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',

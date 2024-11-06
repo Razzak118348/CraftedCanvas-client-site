@@ -24,7 +24,7 @@ const Update = () => {
         const updateCraft = { username, email, price, shortDescription, image, item_name, subcategory_name, rating, customization, processingtime, stockstatus }
 
 
-        fetch(`https://crafted-canvas-server-fg3y9spc1-abdur-razzaks-projects.vercel.app/allCraft/${craft._id}`, {
+        fetch(`https://crafted-canvas-server-beta.vercel.app/allCraft/${craft._id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',

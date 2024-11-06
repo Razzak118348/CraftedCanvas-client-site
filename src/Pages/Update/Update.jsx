@@ -47,7 +47,9 @@ const Update = () => {
 
         return (
             <div>
-
+ <Helmet>
+        <title>Update Craft</title>
+      </Helmet>
 
             <h2 className="text-lg md:text-2xl font-bold text-center my-6 "> Update Art & Craft </h2>
             <div className="flex items-center justify-center mx-4 ">

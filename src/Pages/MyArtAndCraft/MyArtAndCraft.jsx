@@ -78,8 +78,9 @@ const filterCraft = selectOption ==="All" ? allCraft : allCraft.filter(singleCra
 
   return (
     <div className="popin-font mx-5 md:mx-10 lg:mx-20 mb-10">
-      {/*
-*/}
+   <Helmet>
+        <title>My Art and Craft</title>
+      </Helmet>
       <h2 className="text-xl md:text-2xl lg:text-3xl text-center font-bold my-10 underline italic">My All Art Craft At a Glance </h2>
 
 {/* dropdown */}

@@ -9,6 +9,9 @@ const CraftDetails = () => {
 
   return (
     <div>
+       <Helmet>
+        <title>Craft Details | Home</title>
+      </Helmet>
       <div className="hero bg-base-200 min-h-screen m-0 md:my-10 rounded-xl">
         <div className="hero-content grid grid-cols-1 lg:grid-cols-2">
           <div className="flex justify-center items-center">

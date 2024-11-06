@@ -6,6 +6,9 @@ const AllArtandCraft = () => {
     console.log(allArtCraft)
     return (
         <div>
+             <Helmet>
+        <title>All Craft | Home</title>
+      </Helmet>
             <div className="overflow-x-auto my-10">
                 <table className="table">
                     {/* head */}

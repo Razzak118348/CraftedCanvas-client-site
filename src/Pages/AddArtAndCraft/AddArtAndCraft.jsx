@@ -44,7 +44,9 @@ fetch('http://localhost:5000/allcraft',{
 
     return (
         <div>
-
+ <Helmet>
+        <title>Add Art and Craft</title>
+      </Helmet>
 
             <h2 className="text-lg md:text-2xl font-bold text-center my-6 "> Add a Art&Craft </h2>
             <div className="flex items-center justify-center mx-4 ">

@@ -81,7 +81,7 @@ if(!PasswordValidation(password)){
 
   return (
     <div>
-      <Helmet><title>SignUp | Charming Cottage</title></Helmet>
+      <Helmet><title>SignUp | Crafted canvas</title></Helmet>
       <ToastContainer
         autoClose={500}
       ></ToastContainer>

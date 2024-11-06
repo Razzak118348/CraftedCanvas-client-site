@@ -77,6 +77,7 @@ const filterCraft = selectOption ==="All" ? allCraft : allCraft.filter(singleCra
 
   }
 
+ if(allCraft.length>0){
   return (
     <div className="popin-font mx-5 md:mx-10 lg:mx-20 mb-10">
    <Helmet>
@@ -151,6 +152,16 @@ className="border border-gray-400 p-3 rounded-md"
       </div>
     </div>
   );
+ }
+
+ else{
+  return (
+    <div className=" flex justify-center items-center min-h-screen space-x-4">
+      <h1 className="text-2xl font-bold text-red-400">Opps! You do not add any Craft Please add a Craft. </h1>
+     <Link to={'/addCraft'}> <button className=" text-lg font-semibold btn bg-sky-300">Add a craft</button></Link>
+    </div>
+  )
+ }
 };
 
 export default MyArtAndCraft;

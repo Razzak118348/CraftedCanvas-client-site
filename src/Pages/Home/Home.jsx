@@ -13,17 +13,27 @@ import 'animate.css';
 
 const Home = () => {
   const allCraft = useLoaderData();
-  const [selectCraft, setSelectCraft] = useState(allCraft);
-  const handleCraft = (category) => {
-    if (category === "All") {
-      setSelectCraft(allCraft);
-    } else {
-      const filteredCraft = allCraft.filter(
-        (craft) => craft.subcategory_name === category
-      );
-      setSelectCraft(filteredCraft);
-    }
+  const [selectCraft, setSelectCraft] = useState("All");
+  // const handleCraft = (category) => {
+  //   if (category === "All") {
+  //     setSelectCraft(allCraft);
+  //   } else {
+  //     const filteredCraft = allCraft.filter(
+  //       (craft) => craft.subcategory_name === category
+  //     );
+  //     setSelectCraft(filteredCraft);
+  //   }
+  // };
+
+  const Customization = ["All",...new Set(allCraft.map(singleCraft=>singleCraft.subcategory_name))]
+  //customaization er value hisebe filter  kora => jdi "All select hoy tahole all dekhabe ar jdi no select kora hoy tahole no er gula dekhabe "
+const filterCraft = selectCraft ==="All" ? allCraft : allCraft.filter(singleCraft=>singleCraft.subcategory_name === selectCraft)
+
+//jei man ta asbe oita select hisebe nibe
+const handleCustomization =e=>{
+  setSelectCraft(e.target.value)
   };
+
   return (
     <div className="popin-font mx-5 md:mx-10 lg:mx-20 mb-10">
       <Helmet>
@@ -37,53 +47,25 @@ const Home = () => {
             All Art and Craft{" "}
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-5 my-10">
-            <button
-              onClick={() => handleCraft("All")}
-              className="btn bg-sky-200"
-            >
-              All SubCategory
-            </button>
-            <button
-              onClick={() => handleCraft("Landscape Painting")}
-              className="btn bg-sky-200"
-            >
-              Landscape Painting
-            </button>
-            <button
-              onClick={() => handleCraft("Portrait Drawing")}
-              className="btn bg-sky-200"
-            >
-              Portrait Drawing
-            </button>
-            <button
-              onClick={() => handleCraft("Watercolour Painting")}
-              className="btn bg-sky-200"
-            >
-              Watercolour Painting
-            </button>
-            <button
-              onClick={() => handleCraft("Oil Painting")}
-              className="btn bg-sky-200"
-            >
-              Oil Painting
-            </button>
-            <button
-              onClick={() => handleCraft("Charcoal Sketching")}
-              className="btn bg-sky-200"
-            >
-              Charcoal Sketching
-            </button>
-            <button
-              onClick={() => handleCraft("Cartoon Drawing")}
-              className="btn bg-sky-200"
-            >
-              Cartoon Drawing
-            </button>
-          </div>
+       {/* dropdown */}
+<div className="m-7">
+<lebel htmlFor="craft-select" className="block text-gray-800 font-bold">Select A Subcategory:</lebel>
+<select
+id="craft-select"
+value={setSelectCraft}
+onChange={handleCustomization}
+className="border border-gray-400 p-3 rounded-md"
+>
+  {/* show options */}
+  <option>Select A Option</option>
+{Customization.map((custom,idx)=>(<option key={idx} value={custom}>{custom}</option>))}
+
+</select>
+</div>
+
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-            {selectCraft.slice(0, 6).map((craft) => (
+            {filterCraft.slice(0, 6).map((craft) => (
               <div
                 id="my-anchor-element-id"
                 key={craft._id}

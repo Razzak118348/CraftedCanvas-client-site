@@ -25,29 +25,29 @@ const Subcategory = () => {
 
                         </div>
                     </div>
-                    <div className="p-6 rounded lg:p-8 lg:py-12 dark:bg-gray-50">
+                    <div className="p-6 rounded lg:p-8 lg:py-12 dark:bg-gray-50  shadow-md shadow-gray-500">
                         <h3 className="inline font-medium dark:text-gray-900"> Landscape Painting: </h3>
                         <p className="inline">Mountain view canvas, Forest based Landscape
                         painting.</p>
                     </div>
-                    <div className="p-6 rounded lg:p-8 lg:py-12 dark:bg-gray-50">
+                    <div className="p-6 rounded lg:p-8 lg:py-12 dark:bg-gray-50  shadow-md shadow-gray-500">
                         <h3 className="inline font-medium dark:text-gray-900"> Portrait Drawing: </h3>
                         <p className="inline">Pencil Sketch Portrait, Ink Outline Portrait, Acrylic Portrait Canvas.</p>
                     </div>
-                    <div className="p-6 rounded lg:p-8 lg:py-12 dark:bg-gray-50">
+                    <div className="p-6 rounded lg:p-8 lg:py-12 dark:bg-gray-50  shadow-md shadow-gray-500">
                         <h3 className="inline font-medium dark:text-gray-900">Watercolour Painting: </h3>
                         <p className="inline"> Floral Watercolor Art, Animal Watercolor Portrait.</p>
                     </div>
-                    <div className="p-6 rounded lg:p-8 lg:py-12 dark:bg-gray-50">
+                    <div className="p-6 rounded lg:p-8 lg:py-12 dark:bg-gray-50  shadow-md shadow-gray-500">
                         <h3 className="inline font-medium dark:text-gray-900">Oil Painting: </h3>
                         <p className="inline">Realistic Oil Portrait, Abstract Oil Painting.</p>
                     </div>
-                    <div className="p-6 rounded lg:p-8 lg:py-12 dark:bg-gray-50">
+                    <div className="p-6 rounded lg:p-8 lg:py-12 dark:bg-gray-50  shadow-md shadow-gray-500">
                         <h3 className="inline font-medium dark:text-gray-900">Charcoal Sketching: </h3>
                         <p className="inline">Figure Charcoal Sketch, Architectural Charcoal
                         Drawing.</p>
                     </div>
-                    <div className="p-6 rounded lg:p-8 lg:py-12 dark:bg-gray-50">
+                    <div className="p-6 rounded lg:p-8 lg:py-12 dark:bg-gray-50  shadow-md shadow-gray-500">
                         <h3 className="inline font-medium dark:text-gray-900">Cartoon Drawing: </h3>
                         <p className="inline"> Comic Strip Drawing, Superhero Cartoon Design.</p>
                     </div>

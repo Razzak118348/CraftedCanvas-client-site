@@ -18,7 +18,7 @@ const ClientReview = () => {
 
     return (
         <div className='mt-28'>
-            <h2 className='text-lg md:text-3xl '><Typewriter
+            <h2 className='text-lg md:text-3xl mb-5 font-semibold'><Typewriter
                       words={["Customer Reviews and Testimonials ..."]}
                       loop={3}
                       typeSpeed={70}

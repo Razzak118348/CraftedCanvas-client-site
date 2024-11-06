@@ -36,7 +36,7 @@ const handleCustomization =e=>{
 setSelectOption(e.target.value)
 };
 
-//customaization er value hisebe filter  kora => jdi "Customization select hoy tahole all dekhabe ar jdi no select kora hoy tahole no er gula dekhabe "
+//customaization er value hisebe filter  kora => jdi "All select hoy tahole all dekhabe ar jdi no select kora hoy tahole no er gula dekhabe "
 const filterCraft = selectOption ==="All" ? allCraft : allCraft.filter(singleCraft=>singleCraft.customization === selectOption)
 
   //delete operation
@@ -97,6 +97,7 @@ className="border border-gray-400 p-3 rounded-md"
 
 </select>
 </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
         {filterCraft?.map((craft) => (
           <div

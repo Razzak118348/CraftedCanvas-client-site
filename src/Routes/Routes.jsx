@@ -41,7 +41,8 @@ const Routes = createBrowserRouter([
             },
             {
                 path: '/myArtCraft',
-                element: <MyArtAndCraft></MyArtAndCraft>
+                element: <MyArtAndCraft></MyArtAndCraft>,
+
             },
             {
                 path:'/craftDetails/:id',

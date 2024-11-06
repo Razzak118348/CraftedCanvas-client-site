@@ -31,7 +31,7 @@ const Home = () => {
       </Helmet>
       <Banner></Banner>
 
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center ">
         <div className="mt-10 lg:mt-16">
           <h2 className="text-xl font-bold md:text-2xl lg:text-3xl text-center mt-16 mb-6">
             All Art and Craft{" "}
@@ -129,9 +129,10 @@ const Home = () => {
               </div>
             ))}
           </div>
+
           <div className="mt-8 flex items-center justify-center">
             <Link to={"/allArtCraft"}>
-              <button className="btn text-black text-base md:text-lg bg-sky-300">
+              <button className="btn mb-10 text-black text-base md:text-lg bg-sky-300">
                 Show more <FaArrowRight></FaArrowRight>
               </button>
             </Link>

@@ -14,16 +14,7 @@ import 'animate.css';
 const Home = () => {
   const allCraft = useLoaderData();
   const [selectCraft, setSelectCraft] = useState("All");
-  // const handleCraft = (category) => {
-  //   if (category === "All") {
-  //     setSelectCraft(allCraft);
-  //   } else {
-  //     const filteredCraft = allCraft.filter(
-  //       (craft) => craft.subcategory_name === category
-  //     );
-  //     setSelectCraft(filteredCraft);
-  //   }
-  // };
+
 
   const Customization = ["All",...new Set(allCraft.map(singleCraft=>singleCraft.subcategory_name))]
   //customaization er value hisebe filter  kora => jdi "All select hoy tahole all dekhabe ar jdi no select kora hoy tahole no er gula dekhabe "

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link, useLoaderData } from 'react-router-dom';
 
 const AllArtandCraft = () => {
@@ -7,7 +8,7 @@ const AllArtandCraft = () => {
     return (
         <div>
              <Helmet>
-        <title>All Craft | Home</title>
+        <title>All Craft </title>
       </Helmet>
             <div className="overflow-x-auto my-10">
                 <table className="table">

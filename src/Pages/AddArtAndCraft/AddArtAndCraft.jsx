@@ -1,5 +1,6 @@
 import Swal from 'sweetalert2'
 import useAuth from "../../hooks/useAuth"
+import { Helmet } from 'react-helmet';
 const AddArtAndCraft = () => {
 const {user} = useAuth()
     const handleForm = (e)=>{
@@ -20,7 +21,7 @@ const stockstatus = form.stockstatus.value;
 const addCraft ={username, email,price,shortDescription,image,item_name,subcategory_name,rating,customization,processingtime,stockstatus}
 console.log(addCraft);
 
-fetch('http://localhost:5000/allcraft',{
+fetch('https://crafted-canvas-server-fg3y9spc1-abdur-razzaks-projects.vercel.app/allcraft',{
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',

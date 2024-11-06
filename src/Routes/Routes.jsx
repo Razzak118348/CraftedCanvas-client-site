@@ -21,12 +21,12 @@ const Routes = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('http://localhost:5000/allcraft')
+                loader: () => fetch('https://crafted-canvas-server-fg3y9spc1-abdur-razzaks-projects.vercel.app/allcraft')
             },
             {
                 path: '/allArtCraft',
                 element: <AllArtandCraft></AllArtandCraft>,
-                loader: () => fetch('http://localhost:5000/allcraft'),
+                loader: () => fetch('https://crafted-canvas-server-fg3y9spc1-abdur-razzaks-projects.vercel.app/allcraft'),
             },
             {
                 path: '/login',
@@ -48,13 +48,13 @@ const Routes = createBrowserRouter([
             {
                 path:'/craftDetails/:id',
                 element:<PrivetRout> <CraftDetails></CraftDetails> </PrivetRout>,
-                loader: ({params}) => fetch(`http://localhost:5000/allCraft/${params.id}`)
+                loader: ({params}) => fetch(`https://crafted-canvas-server-fg3y9spc1-abdur-razzaks-projects.vercel.app/allCraft/${params.id}`)
 
             },
             {
                 path:'/update/:id',
                 element:<Update></Update>,
-                loader:({params}) => fetch(`http://localhost:5000/allCraft/${params.id}`)
+                loader:({params}) => fetch(`https://crafted-canvas-server-fg3y9spc1-abdur-razzaks-projects.vercel.app/allCraft/${params.id}`)
             }
         ]
     }

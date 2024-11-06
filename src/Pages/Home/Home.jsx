@@ -106,7 +106,7 @@ className="border border-gray-400 p-3 rounded-md"
           <div className="mt-8 flex items-center justify-center">
             <Link to={"/allArtCraft"}>
               <button className="btn mb-10 text-black text-base md:text-lg bg-sky-300">
-                Show more <FaArrowRight></FaArrowRight>
+                Show All Craft <FaArrowRight></FaArrowRight>
               </button>
             </Link>
           </div>

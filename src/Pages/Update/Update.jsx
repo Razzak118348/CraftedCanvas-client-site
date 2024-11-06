@@ -1,6 +1,7 @@
 import Swal from 'sweetalert2'
 import useAuth from "../../hooks/useAuth"
 import { useLoaderData } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
 const Update = () => {
     const { user } = useAuth()
@@ -23,7 +24,7 @@ const Update = () => {
         const updateCraft = { username, email, price, shortDescription, image, item_name, subcategory_name, rating, customization, processingtime, stockstatus }
 
 
-        fetch(`http://localhost:5000/allCraft/${craft._id}`, {
+        fetch(`https://crafted-canvas-server-fg3y9spc1-abdur-razzaks-projects.vercel.app/allCraft/${craft._id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',

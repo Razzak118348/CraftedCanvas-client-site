@@ -6,6 +6,7 @@ import { FaArrowRight, FaStar } from "react-icons/fa";
 import { Tooltip } from "react-tooltip";
 import 'animate.css';
 import { AuthContext } from "../../Context/ContextApi";
+import { Helmet } from "react-helmet";
 
 const MyArtAndCraft = () => {
   const { user } = useContext(AuthContext) || {}
@@ -19,7 +20,7 @@ const[selectOption,setSelectOption] =useState("All")
       return  navigate('/')
     }
     if(user?.email){
-      fetch(`http://localhost:5000/mycraft/${user.email}`)//get route .. so no need declear method
+      fetch(`https://crafted-canvas-server-fg3y9spc1-abdur-razzaks-projects.vercel.app/mycraft/${user.email}`)//get route .. so no need declear method
       .then(res => res.json())
       .then(data => {
         console.log(data)
@@ -53,7 +54,7 @@ const filterCraft = selectOption ==="All" ? allCraft : allCraft.filter(singleCra
       confirmButtonText: "Yes, delete it!"
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/allCraft/${_id}`, {
+        fetch(`https://crafted-canvas-server-fg3y9spc1-abdur-razzaks-projects.vercel.app/allCraft/${_id}`, {
           method: "DELETE",
         })
           .then(res => res.json())

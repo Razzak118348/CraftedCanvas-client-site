@@ -1,4 +1,5 @@
 
+import { Helmet } from "react-helmet";
 import { FaStar } from "react-icons/fa";
 import { useLoaderData} from "react-router-dom";
 
@@ -10,7 +11,7 @@ const CraftDetails = () => {
   return (
     <div>
        <Helmet>
-        <title>Craft Details | Home</title>
+        <title>Craft Details </title>
       </Helmet>
       <div className="hero bg-base-200 min-h-screen m-0 md:my-10 rounded-xl">
         <div className="hero-content grid grid-cols-1 lg:grid-cols-2">

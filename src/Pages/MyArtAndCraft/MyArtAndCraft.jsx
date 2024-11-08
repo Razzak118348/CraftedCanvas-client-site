@@ -54,7 +54,7 @@ const filterCraft = selectOption ==="All" ? allCraft : allCraft.filter(singleCra
       confirmButtonText: "Yes, delete it!"
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://crafted-canvas-server-beta.vercel.app/allCraft/${_id}`, {
+        fetch(`https://crafted-canvas-server-beta.vercel.app/allCraft/${id}`, {
           method: "DELETE",
         })
           .then(res => res.json())
